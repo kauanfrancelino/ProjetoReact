@@ -1,0 +1,123 @@
+/* Estilos para o resumo de compra no Checkout */
+
+.checkout {
+  position: relative;
+  align-items: center;
+  top: 100px;
+}
+
+.summary {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.summary h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.total {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para os rótulos dos campos de formulário */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilos para os campos de rádio */
+.input-container {
+  margin-right: 10px;
+}
+
+/* Estilos para o botão de finalizar pedido */
+.button__finalizar {
+  background-color: rgb(42, 123, 42);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button__finalizar:hover {
+  background-color: #fff159;
+  color: rgb(53, 53, 53);
+}
+
+/* Estilos CSS para alinhar os radios lado a lado */
+
+.input-options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-options h5 {
+  margin-bottom: 10px;
+}
+
+.input-options .pix,
+.input-options .cartao,
+.input-options .dinheiro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Estilos para os campos de rádio específicos - Pix, Cartão, Dinheiro */
+.input-options input[type="radio"] {
+  display: none;
+}
+
+.input-options input[type="radio"] + label {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 5px;
+}
+
+/* Estilizando os rótulos quando o radio está marcado */
+.input-options input[type="radio"]:checked + label {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #3498db;
+}
+
+/* Estilos para os rótulos dos campos de rádio */
